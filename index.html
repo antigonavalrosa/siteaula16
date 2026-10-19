@@ -3,74 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoPeças - sua loja na internet</title>
+    <meta name="theme-color" content="#071522">
+    <meta name="description" content="InfoPeças — componentes e tecnologia para o seu computador.">
+    <title>InfoPeças | Tecnologia em outro nível</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="conteudo-header">
-            <div class="logo">
-                <img src="imagens/logo.png" alt="Logo InfoPeças">
-            </div>
+    <div class="fundo-luz luz-um"></div>
+    <div class="fundo-luz luz-dois"></div>
 
-            <nav class="menu">
-                <a href="index.html">Início</a>
-                <a href="#Hardware">Hardware</a>
-                <a href="#Software">Software</a>
-                <a href="#Contato">Contato</a>
-            </nav>
-        </div>
+    <header class="cabecalho">
+        <a class="marca" href="#inicio" aria-label="InfoPeças - início">
+            <img src="imagens/logo.png" alt="Logo InfoPeças">
+            <span>INFO<span class="marca-destaque">PEÇAS</span></span>
+        </a>
+
+        <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="menu" id="menu">
+            <a href="#inicio" class="link-ativo">Início</a>
+            <a href="#hardware">Hardware</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <a class="cabecalho-cta" href="#hardware">Explorar peças <span>↗</span></a>
     </header>
 
-    <!-- Corpo do site -->
     <main>
-        <section class="apresentacao">
-            <h1>InfoPeças</h1>
-            <p>Peças e componentes para o seu computador.</p>
+        <section class="hero" id="inicio">
+            <div class="hero-texto aparece">
+                <span class="etiqueta"><span class="ponto"></span> TECNOLOGIA • PERFORMANCE • CONFIANÇA</span>
+                <h1>Seu próximo upgrade<br>começa <span>aqui.</span></h1>
+                <p>Componentes para quem quer ir além. Descubra peças que levam seu computador a um novo nível de desempenho.</p>
+                <div class="hero-acoes">
+                    <a class="botao botao-principal" href="#hardware">Explorar produtos <span>→</span></a>
+                    <a class="botao botao-secundario" href="#sobre">Conheça a InfoPeças</a>
+                </div>
+                <div class="hero-dados">
+                    <div><strong>PC</strong><span>Componentes</span></div>
+                    <i></i>
+                    <div><strong>Seu setup</strong><span>Seu próximo nível</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual aparece">
+                <div class="anel anel-um"></div>
+                <div class="anel anel-dois"></div>
+                <div class="orb orb-um"></div>
+                <div class="orb orb-dois"></div>
+                <div class="chip-3d" id="chip3d" aria-label="Ilustração 3D de um processador">
+                    <div class="chip-sombra"></div>
+                    <div class="chip-corpo">
+                        <div class="chip-lateral"></div>
+                        <div class="chip-topo">
+                            <div class="chip-quadrado">
+                                <span>IP</span>
+                                <small>CORE</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pino pino-1"></div><div class="pino pino-2"></div>
+                    <div class="pino pino-3"></div><div class="pino pino-4"></div>
+                </div>
+                <div class="flutuante flutuante-topo"><span class="mini-icone">✦</span><div><b>Performance</b><small>Eleve seu setup</small></div></div>
+                <div class="flutuante flutuante-baixo"><span class="mini-icone mini-icone-azul">⌘</span><div><b>Hardware</b><small>Peças essenciais</small></div></div>
+                <span class="visual-legenda">ENGINEERED FOR YOUR NEXT LEVEL</span>
+            </div>
+            <a class="rolar" href="#hardware"><span></span> Role para explorar</a>
         </section>
 
-        <section class="produtos" id="Hardware">
-            <h2>Hardware</h2>
-            <p>Confira alguns dos nossos produtos.</p>
+        <section class="faixa-info" aria-label="Destaques">
+            <div><span>✦</span> Tecnologia para seu setup</div>
+            <div><span>✦</span> Componentes essenciais</div>
+            <div><span>✦</span> Seu próximo upgrade começa aqui</div>
+        </section>
 
-            <div class="lista-produtos">
-                <div class="produto">
-                    <img src="imagens/memoria_ram_sem_fundo.png" alt="Memória RAM">
-                    <h3>Memória RAM</h3>
+        <section class="secao produtos-secao" id="hardware">
+            <div class="secao-cabecalho aparece">
+                <div>
+                    <span class="sobretitulo">ESCOLHA SEU UPGRADE</span>
+                    <h2>Peças que fazem<br><span>a diferença.</span></h2>
                 </div>
+                <p>Explore alguns componentes fundamentais para montar, melhorar ou renovar seu computador.</p>
+            </div>
 
-                <div class="produto">
-                    <img src="imagens/placa_mae_sem_fundo.png" alt="Placa-mãe">
-                    <h3>Placa-mãe</h3>
-                </div>
+            <div class="filtros aparece" role="group" aria-label="Filtrar produtos">
+                <button class="filtro ativo" data-filtro="todos">Todos os produtos</button>
+                <button class="filtro" data-filtro="memoria">Memória</button>
+                <button class="filtro" data-filtro="componentes">Componentes</button>
+                <button class="filtro" data-filtro="armazenamento">Armazenamento</button>
+            </div>
 
-                <div class="produto">
-                    <img src="imagens/placa_video_sem_fundo.png" alt="Placa de vídeo">
-                    <h3>Placa de vídeo</h3>
-                </div>
+            <div class="grade-produtos">
+                <article class="produto-card aparece" data-categoria="memoria">
+                    <div class="produto-imagem"><span class="produto-numero">01 / MEMÓRIA</span><img src="imagens/memoria_ram_sem_fundo.png" alt="Módulo de memória RAM" loading="lazy"><span class="imagem-brilho"></span></div>
+                    <div class="produto-info"><span class="categoria">MEMÓRIA</span><h3>Memória RAM</h3><p>Mais espaço para executar tarefas com fluidez.</p><button class="produto-link" data-produto="Memória RAM">Saiba mais <span>↗</span></button></div>
+                </article>
+                <article class="produto-card aparece" data-categoria="componentes">
+                    <div class="produto-imagem"><span class="produto-numero">02 / BASE DO SETUP</span><img src="imagens/placa_mae_sem_fundo.png" alt="Placa-mãe para computador" loading="lazy"><span class="imagem-brilho"></span></div>
+                    <div class="produto-info"><span class="categoria">COMPONENTES</span><h3>Placa-mãe</h3><p>Conecta e permite a comunicação entre as peças.</p><button class="produto-link" data-produto="Placa-mãe">Saiba mais <span>↗</span></button></div>
+                </article>
+                <article class="produto-card aparece" data-categoria="componentes">
+                    <div class="produto-imagem"><span class="produto-numero">03 / GRÁFICOS</span><img src="imagens/placa_video_sem_fundo.png" alt="Placa de vídeo" loading="lazy"><span class="imagem-brilho"></span></div>
+                    <div class="produto-info"><span class="categoria">GRÁFICOS</span><h3>Placa de vídeo</h3><p>Potencial para gráficos, criação e jogos.</p><button class="produto-link" data-produto="Placa de vídeo">Saiba mais <span>↗</span></button></div>
+                </article>
+                <article class="produto-card aparece" data-categoria="armazenamento">
+                    <div class="produto-imagem"><span class="produto-numero">04 / ARMAZENAMENTO</span><img src="imagens/ssd_kingston_sem_fundo.png" alt="Unidade SSD Kingston" loading="lazy"><span class="imagem-brilho"></span></div>
+                    <div class="produto-info"><span class="categoria">ARMAZENAMENTO</span><h3>SSD</h3><p>Armazenamento rápido para arquivos e programas.</p><button class="produto-link" data-produto="SSD">Saiba mais <span>↗</span></button></div>
+                </article>
+            </div>
+            <p class="nota-produtos">Produtos ilustrativos. Consulte disponibilidade, modelos e valores diretamente com a loja.</p>
+        </section>
 
-                <div class="produto">
-                    <img src="imagens/ssd_kingston_sem_fundo.png" alt="SSD Kingston">
-                    <h3>SSD</h3>
+        <section class="sobre-secao" id="sobre">
+            <div class="sobre-visual aparece">
+                <div class="sobre-quadro">
+                    <div class="sobre-circulo"></div>
+                    <div class="sobre-chip">IP<span>+</span></div>
+                    <span class="sobre-texto-vertical">BUILT FOR PERFORMANCE</span>
+                    <span class="sobre-numero">01 — 04</span>
                 </div>
+            </div>
+            <div class="sobre-conteudo aparece">
+                <span class="sobretitulo">SOBRE A INFOPEÇAS</span>
+                <h2>Uma boa máquina<br>começa com <span>boas escolhas.</span></h2>
+                <p>Ajudamos você a conhecer melhor os componentes que fazem seu computador funcionar. Explore as peças e entre em contato para tirar suas dúvidas.</p>
+                <a class="botao botao-principal" href="#contato">Fale com a gente <span>→</span></a>
             </div>
         </section>
 
-        <section class="informacao" id="Software">
-            <h2>Software</h2>
-            <p>Em breve, mais informações sobre nossos serviços.</p>
-        </section>
-
-        <section class="informacao" id="Contato">
-            <h2>Contato</h2>
-            <p>Entre em contato para saber mais sobre nossos produtos.</p>
+        <section class="contato-secao" id="contato">
+            <div class="contato-caixa aparece">
+                <div class="contato-luz"></div>
+                <span class="sobretitulo">VAMOS MONTAR SEU PRÓXIMO PASSO?</span>
+                <h2>Tem dúvidas sobre<br>alguma <span>peça?</span></h2>
+                <p>Entre em contato para conversar sobre componentes e encontrar informações para seu setup.</p>
+                <a class="botao botao-principal" href="mailto:contato@infopecas.com.br?subject=Consulta%20sobre%20componentes">Entrar em contato <span>↗</span></a>
+                <small>Importante: substitua o e-mail de exemplo pelo contato oficial da loja.</small>
+            </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>InfoPeças - sua loja na internet</p>
+    <footer class="rodape">
+        <a class="marca marca-rodape" href="#inicio"><img src="imagens/logo.png" alt=""><span>INFO<span class="marca-destaque">PEÇAS</span></span></a>
+        <p>Tecnologia para o seu próximo nível.</p>
+        <a class="voltar-topo" href="#inicio">Voltar ao topo ↑</a>
+        <div class="rodape-final"><span>© <span id="ano"></span> InfoPeças.</span><span>Feito para quem gosta de tecnologia.</span></div>
     </footer>
+
+    <div class="modal" id="modalProduto" aria-hidden="true">
+        <div class="modal-fundo" data-fechar-modal></div>
+        <div class="modal-conteudo" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+            <button class="modal-fechar" id="fecharModal" aria-label="Fechar janela">×</button>
+            <span class="sobretitulo">INFOPEÇAS • COMPONENTES</span>
+            <h2 id="modalTitulo">Produto</h2>
+            <p>Quer saber mais sobre este componente? Entre em contato com a InfoPeças para consultar modelos, disponibilidade e valores.</p>
+            <a class="botao botao-principal" id="modalContato" href="mailto:contato@infopecas.com.br">Consultar produto <span>↗</span></a>
+        </div>
+    </div>
+
+    <button class="voltar-topo-flutuante" id="topoFlutuante" aria-label="Voltar ao topo">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>
