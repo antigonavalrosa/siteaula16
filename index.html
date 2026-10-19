@@ -3,89 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="InfoPeças — componentes, peças e acessórios para seu computador.">
-    <title>InfoPeças | Sua loja de tecnologia</title>
+    <title>InfoPeças - sua loja na internet</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="topo">
-        <div class="conteudo-header">
-            <a class="logo" href="index.html" aria-label="InfoPeças - página inicial">
-                <img src="imagens/logo.png" alt="Logo InfoPeças">
-            </a>
-            <nav class="menu" aria-label="Navegação principal">
-                <a href="#inicio">Início</a>
-                <a href="#Hardware">Hardware</a>
-                <a href="#Software">Software</a>
-                <a href="#Contato">Contato</a>
-            </nav>
+<header>
+    <div class="conteudo-header">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo InfoPeças">
         </div>
-    </header>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="#Hardware">Hardware</a>
+            <a href="#Software">Software</a>
+            <a href="#Contato">Contato</a>
+        </nav>
+    </div>
+</header>
 
-    <main>
-        <section class="hero" id="inicio">
-            <div class="hero-texto">
-                <span class="etiqueta">TECNOLOGIA PARA VOCÊ</span>
-                <h1>Monte. Atualize.<br><span>Vá mais longe.</span></h1>
-                <p>Encontre peças e componentes para dar mais desempenho ao seu computador, seja para trabalhar, estudar ou jogar.</p>
-                <a class="botao-principal" href="#Hardware">Explorar produtos <span aria-hidden="true">→</span></a>
+<main>
+    <section class="apresentacao">
+        <h1>Bem-vindo à InfoPeças!</h1>
+        <p>Peças e componentes para o seu computador.</p>
+        <a class="botao" href="#Hardware">Ver produtos</a>
+    </section>
+
+    <section class="produtos" id="Hardware">
+        <h2>Nossos produtos</h2>
+        <p class="subtitulo">Conheça alguns dos nossos componentes.</p>
+
+        <div class="lista-produtos">
+            <div class="produto">
+                <img src="imagens/memoria_ram_sem_fundo.png" alt="Memória RAM">
+                <h3>Memória RAM</h3>
+                <p>Ajuda o computador a executar tarefas.</p>
             </div>
-            <div class="hero-arte" aria-hidden="true">
-                <div class="circulo-arte"></div>
-                <div class="chip-arte"><span>INFO</span><strong>PEÇAS</strong><small>PERFORMANCE • TECNOLOGIA</small></div>
-                <span class="ponto ponto-1"></span><span class="ponto ponto-2"></span><span class="ponto ponto-3"></span>
+
+            <div class="produto">
+                <img src="imagens/placa_mae_sem_fundo.png" alt="Placa-mãe">
+                <h3>Placa-mãe</h3>
+                <p>Conecta as peças do computador.</p>
             </div>
-        </section>
 
-        <section class="beneficios" aria-label="Vantagens">
-            <div><span class="beneficio-icone">✦</span><p><strong>Peças selecionadas</strong><small>Componentes para seu setup</small></p></div>
-            <div><span class="beneficio-icone">⌁</span><p><strong>Mais desempenho</strong><small>Atualize seu computador</small></p></div>
-            <div><span class="beneficio-icone">✓</span><p><strong>Ajuda para escolher</strong><small>Encontre a peça ideal</small></p></div>
-        </section>
-
-        <section class="secao-produtos" id="Hardware">
-            <div class="titulo-secao">
-                <div><span class="etiqueta">NOSSO CATÁLOGO</span><h2>Peças em destaque</h2><p>Confira alguns componentes para o seu computador.</p></div>
+            <div class="produto">
+                <img src="imagens/placa_video_sem_fundo.png" alt="Placa de vídeo">
+                <h3>Placa de vídeo</h3>
+                <p>Ajuda no desempenho gráfico.</p>
             </div>
-            <div class="grade-produtos">
-                <article class="produto-card">
-                    <div class="produto-foto"><span class="tag-produto">MEMÓRIA</span><img src="imagens/memoria_ram_sem_fundo.png" alt="Módulo de memória RAM" loading="lazy"></div>
-                    <div class="produto-info"><h3>Memória RAM</h3><p>Mais agilidade para executar tarefas e aplicativos.</p><a href="#Contato">Consultar disponibilidade <span>→</span></a></div>
-                </article>
-                <article class="produto-card">
-                    <div class="produto-foto"><span class="tag-produto">COMPONENTE</span><img src="imagens/placa_mae_sem_fundo.png" alt="Placa-mãe para computador" loading="lazy"></div>
-                    <div class="produto-info"><h3>Placa-mãe</h3><p>A base para conectar e integrar os componentes do PC.</p><a href="#Contato">Consultar disponibilidade <span>→</span></a></div>
-                </article>
-                <article class="produto-card">
-                    <div class="produto-foto"><span class="tag-produto">GRÁFICOS</span><img src="imagens/placa_video_sem_fundo.png" alt="Placa de vídeo" loading="lazy"></div>
-                    <div class="produto-info"><h3>Placa de vídeo</h3><p>Potencialize gráficos, jogos e trabalhos visuais.</p><a href="#Contato">Consultar disponibilidade <span>→</span></a></div>
-                </article>
-                <article class="produto-card">
-                    <div class="produto-foto"><span class="tag-produto">ARMAZENAMENTO</span><img src="imagens/ssd_kingston_sem_fundo.png" alt="Unidade SSD Kingston" loading="lazy"></div>
-                    <div class="produto-info"><h3>SSD</h3><p>Inicialização rápida e acesso mais ágil aos arquivos.</p><a href="#Contato">Consultar disponibilidade <span>→</span></a></div>
-                </article>
+
+            <div class="produto">
+                <img src="imagens/ssd_kingston_sem_fundo.png" alt="SSD Kingston">
+                <h3>SSD</h3>
+                <p>Armazena arquivos e ajuda a acelerar o computador.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="secao-software" id="Software">
-            <div class="software-icone" aria-hidden="true">⌘</div>
-            <div><span class="etiqueta">ALÉM DO HARDWARE</span><h2>Seu computador, do seu jeito.</h2><p>Precisa de ajuda para escolher peças ou entender qual atualização faz sentido para você? Entre em contato para conversar sobre as opções.</p></div>
-            <a class="botao-secundario" href="#Contato">Fale com a gente <span>→</span></a>
-        </section>
+    <section class="informacao" id="Software">
+        <h2>Precisa de ajuda?</h2>
+        <p>Entre em contato para tirar dúvidas sobre peças e componentes.</p>
+    </section>
 
-        <section class="contato" id="Contato">
-            <span class="etiqueta">VAMOS CONVERSAR?</span>
-            <h2>Procurando uma peça específica?</h2>
-            <p>Entre em contato para consultar disponibilidade, compatibilidade e informações dos componentes.</p>
-            <a class="botao-principal" href="mailto:contato@infopecas.com.br">Entre em contato <span aria-hidden="true">→</span></a>
-            <small>O e-mail acima é ilustrativo; substitua pelo contato oficial da loja quando disponível.</small>
-        </section>
-    </main>
+    <section class="contato" id="Contato">
+        <h2>Contato</h2>
+        <p>Fale com a InfoPeças para saber mais sobre nossos produtos.</p>
+        <a class="botao" href="mailto:contato@infopecas.com.br">Enviar e-mail</a>
+        <p class="aviso">Troque o e-mail de exemplo pelo contato verdadeiro da loja.</p>
+    </section>
+</main>
 
-    <footer class="rodape">
-        <a class="logo-rodape" href="#inicio">Info<span>Peças</span></a>
-        <p>Peças e tecnologia para o seu próximo upgrade.</p>
-        <small>© 2026 InfoPeças. Todos os direitos reservados.</small>
-    </footer>
+<footer>
+    <p>InfoPeças - sua loja na internet</p>
+</footer>
 </body>
 </html>
